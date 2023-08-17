@@ -30,7 +30,7 @@ The instances have the following specifications:
 
     ![Create cluster - name](/static/images/1-createcluster-name.png)
 
-* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled either `cluster-config-c6a.yaml` or `cluster-config-hpc6a.yaml`.
+* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled either `cluster-config-c7g.yaml` or `cluster-config-hpc7g.yaml`.
 
 4. In **Cluster**, select a VPC from your account (there should only be one available in the dropdown), and choose **Next**. 
 
