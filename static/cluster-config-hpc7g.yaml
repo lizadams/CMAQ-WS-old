@@ -15,8 +15,6 @@ HeadNode:
     AdditionalIamPolicies:
       - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
       - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
-  Dcv:
-    Enabled: true
 Scheduling:
   Scheduler: slurm
   SlurmSettings:
@@ -29,9 +27,9 @@ Scheduling:
           - subnet-0eed3f3567767ce4d 
         PlacementGroup:
           Enabled: true
-        Iam:
-          AdditionalIamPolicies:
-            - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+      Iam:
+        AdditionalIamPolicies:
+          - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
       ComputeResources:
         - Name: compute-resource-1
           InstanceType: hpc7g.16xlarge
