@@ -11,7 +11,7 @@ You will be using an AWS CloudFormation quick-create link to deploy an AWS Paral
 
 ### Deploy the AWS ParallelCluster UI
 
-1. To install an instance of the AWS ParallelCluster UI, you choose an AWS CloudFormation quick-create link for the AWS Region that you create clusters in. For **us-east-2**, click on [this link](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?stackName=parallelcluster-ui&templateURL=https://parallelcluster-ui-release-artifacts-us-east-1.s3.us-east-1.amazonaws.com/parallelcluster-ui.yaml) to be taken to a Create Stack Wizard where you provide quick-create stack template inputs and deploy the stack. 
+1. To install an instance of the AWS ParallelCluster UI, you choose an AWS CloudFormation quick-create link for the AWS Region that you create clusters in. For **us-east-1**, click on [this link](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=parallelcluster-ui&templateURL=https://parallelcluster-ui-release-artifacts-us-east-1.s3.us-east-1.amazonaws.com/parallelcluster-ui.yaml) to be taken to a Create Stack Wizard where you provide quick-create stack template inputs and deploy the stack. 
   
     *For other regions, access AWS ParallelCluster UI quick-create links at [this page](https://docs.aws.amazon.com/parallelcluster/latest/ug/install-pcui-v3.html).*  
   
