@@ -37,4 +37,6 @@ ssh -Y compute-dy-hpc7g-1
 htop
 ```
 
+![ec2-user](/static/images/1-gettoknow-ec2user.png)
+
 5. 
