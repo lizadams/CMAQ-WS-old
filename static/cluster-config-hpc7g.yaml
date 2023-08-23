@@ -12,7 +12,7 @@ HeadNode:
       - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
       - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
   Dcv:
-    Enabled: true
+    Enabled: false
 Scheduling:
   Scheduler: slurm
   SlurmQueues:
