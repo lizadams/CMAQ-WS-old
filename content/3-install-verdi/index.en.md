@@ -63,3 +63,13 @@ From your local machine
 
 `scp -i ~/cmas.pem VERDI_2.1.4_linux64_20230425.tar.gz ubuntu@54.80.227.174:/shared/build`
 
+
+### Login to cluster and extract VERDI software
+
+`pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster`
+
+`cd /shared/build`
+
+`tar -xzvf VERDI_2.1.4_linux64_20230425.tar.gz`
+
+
