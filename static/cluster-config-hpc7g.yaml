@@ -48,3 +48,5 @@ SharedStorage:
     FsxLustreSettings:
       StorageCapacity: 1200
       ImportPath: s3://cmas-cmaq
+      DeletionPolicy: Delete
+      DeploymentType: SCRATCH_1
