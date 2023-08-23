@@ -4,6 +4,8 @@ weight: 23
 ---
 
 :::alert{type=info}
+Note, the YAML file used to create the cluster created an automatic link from the S3 bucket to the /fsx file system.
+The following instructions help to prepare the input data prior to running CMAQ.
 [AWS Guide on Preloading Files](https://docs.aws.amazon.com/fsx/latest/LustreGuide/preload-file-contents-hsm-dra.html)
 :::
 
