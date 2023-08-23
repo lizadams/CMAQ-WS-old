@@ -12,18 +12,14 @@ The CMAQ run script has been configured to run on 192 cores (3 compute nodes of 
 
 `cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts`
 
-2. Edit the run script to only run for 1 day
+2. **Edit the run script to only run for 1 day**
 
-Change the log file name to use
+Change the log file name to use 1day rather than 2day in the name:
 
-1day
-
-rather than
-
-2day
-
+```
 #SBATCH -o /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/run_cctm5.4+_Bench_2018_12US1_cb6r5_ae6_20200131_MYR.192.12x16pe.1day.20171222start.3x64.log
 #SBATCH -e /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/run_cctm5.4+_Bench_2018_12US1_cb6r5_ae6_20200131_MYR.192.12x16pe.1day.20171222start.3x64.log
+```
 
 
 Change the END_DATE to be the same as the START_DATE, to run for only one day
@@ -63,3 +59,5 @@ htop
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
 5. HTOP shows that 64 processes are running and that 80.2G out of 124 G of memory is being used.
+
+
