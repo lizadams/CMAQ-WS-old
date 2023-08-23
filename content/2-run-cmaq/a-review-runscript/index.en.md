@@ -10,6 +10,8 @@ links to CMAQ EPA site
 
 1. **View the top of the run script.**
 
+`cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/`
+
 `head run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`
 
 Output:
