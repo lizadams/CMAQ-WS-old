@@ -4,7 +4,7 @@ weight: 23
 ---
 
 :::alert{type=info}
-links to CMAQ EPA site
+The CMAQ run script has been configured to run on 192 cores (3 compute nodes of hpc7g with 64 cores/node)
 :::
 
 
