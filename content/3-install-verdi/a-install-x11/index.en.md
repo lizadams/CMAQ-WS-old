@@ -1,5 +1,5 @@
 ---
-title: Install VERDI on HPC cluster
+title: Install X11 and get Display working
 weight: 20
 --- 
 
