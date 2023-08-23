@@ -19,10 +19,3 @@ links to CMAQ EPA site
 
 
 3. **Commpare the timing with the results in the [CMAQ on AWS Tutorial](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/Performance-Opt/performance-optimization.html#benchmark-timing-for-hpc7g-16xlarge-with-64-processors-per-node)**
-
-```
-ssh -Y compute-dy-hpc7g-1
-htop
-```
-
-5. 
