@@ -14,6 +14,6 @@ We’ve broken the steps down to:
 * Create a Cluster with AWS ParallelCluster
 * Connect to the cluster
 * Get to know the cluster
-* Install Spack package manager
-* Install Intel compilers and MPI
-* Install NCL
+* Load Environment Modules 
+* Run CMAQ
+* Visualize CMAQ output
