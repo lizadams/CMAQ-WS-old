@@ -80,7 +80,7 @@ csh
 4. **Load a particular module.** In this case, this command loads Intel MPI in your environment and checks the path of *mpirun*.
 
     ```bash
-    module load intelmpi
+    module load ioapi-3.2/gcc-9.5-netcdf  netcdf-4.8.1/gcc-9.5 openmpi/4.1.5 libfabric-aws
     which mpirun 
     ```
 
@@ -111,4 +111,4 @@ csh
 
     ![Showmount](/static/images/1-gettoknow-showmount.png)
 
-In the next section, we’ll install Spack on this shared filesystem!
+In the next section, we will explore the CMAQ software installed on the /shared filesystem!
