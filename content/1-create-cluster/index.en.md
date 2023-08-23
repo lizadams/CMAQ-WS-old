@@ -3,6 +3,11 @@ title: Create an HPC cluster
 weight: 20
 --- 
 
+:::alert{type=info}
+Note, the YAML file used to create the cluster uses a snapshot that was created using the ubuntu2004 OS
+If you choose a different version of the OS or a different OS, you will need to follow instructions in the [developer guide](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/developers_guide/cmaq-vm/install_64-bit-arm.html) to install the CMAQ libraries and code.
+:::
+
 ### AWS ParallelCluster 
 
 AWS ParallelCluster is an AWS-supported, open source cluster management tool that makes it easy for you to deploy and manage High Performance Computing (HPC) clusters on AWS. ParallelCluster uses a simple (YAML) text file to model and provision all the resources needed for your HPC applications in an automated and secure manner. 
@@ -14,6 +19,6 @@ We’ve broken the steps down to:
 * Create a Cluster with AWS ParallelCluster
 * Connect to the cluster
 * Get to know the cluster
-* Install Spack package manager
-* Install Intel compilers and MPI
-* Install NCL
+* Load Environment Modules 
+* Run CMAQ
+* Visualize CMAQ output

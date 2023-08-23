@@ -1,52 +1,40 @@
-Region: us-east-1
-Image:
-  Os: ubuntu2004
 HeadNode:
-  InstanceType: c7g.large
+  InstanceType: c7g.xlarge
   Networking:
     SubnetId: subnet-0eed3f3567767ce4d 
-  DisableSimultaneousMultithreading: true
   Ssh:
     KeyName: cmas
   LocalStorage:
     RootVolume:
-      Encrypted: false
+      Size: 40
   Iam:
     AdditionalIamPolicies:
       - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
       - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+  Dcv:
+    Enabled: false
 Scheduling:
   Scheduler: slurm
-  SlurmSettings:
-    ScaledownIdletime: 5
   SlurmQueues:
-    - Name: queue1
-      CapacityType: ONDEMAND
+    - Name: compute
+      ComputeResources:
+        - Name: hpc7g
+          MinCount: 0
+          MaxCount: 3
+          InstanceType: hpc7g.16xlarge
+          Efa:
+            Enabled: true
       Networking:
         SubnetIds:
-          - subnet-0eed3f3567767ce4d 
+          - subnet-0eed3f3567767ce4d
         PlacementGroup:
           Enabled: true
       Iam:
         AdditionalIamPolicies:
           - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
-      ComputeResources:
-        - Name: compute-resource-1
-          InstanceType: hpc7g.16xlarge
-          MinCount: 0
-          MaxCount: 3 
-          DisableSimultaneousMultithreading: true
-          Efa:
-            Enabled: true
-            GdrSupport: false
-        - Name: compute-resource-2
-          InstanceType: hpc7g.8xlarge
-          MinCount: 0
-          MaxCount: 6
-          DisableSimultaneousMultithreading: true
-          Efa:
-            Enabled: true
-            GdrSupport: false
+Region: us-east-1
+Image:
+  Os: ubuntu2004
 SharedStorage:
   - MountDir: /shared
     Name: ebs-shared
@@ -54,9 +42,11 @@ SharedStorage:
     EbsSettings:
       Encrypted: false
       SnapshotId: snap-0049a7c309f238500
-  - MountDir: /fsx
-    Name: name2
+  - Name: FsxLustre0
     StorageType: FsxLustre
+    MountDir: /fsx
     FsxLustreSettings:
       StorageCapacity: 1200
       ImportPath: s3://cmas-cmaq
+      DeletionPolicy: Delete
+      DeploymentType: SCRATCH_1
