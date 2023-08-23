@@ -13,4 +13,4 @@ Doing all parts of this workshop should take approximately 4 hours.
 
 This workshop is designed for builders who want to learn more about running CMAQ within AWS.
 
-![Surface temperature](static/images/0-surface_temperature.gif)
+![Surface temperature](static/images/0-PM25_VERDI.gif)
