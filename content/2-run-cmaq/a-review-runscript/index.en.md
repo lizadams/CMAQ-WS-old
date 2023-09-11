@@ -10,9 +10,10 @@ links to CMAQ EPA site
 
 1. **View the top of the run script.**
 
-`cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/`
-
-`head run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`
+```csh
+cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/
+head run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
+```
 
 Output:
 
@@ -34,7 +35,9 @@ Note, this section of the run script determines how many compute nodes will be p
 
 2. **View the domain decomposition settings in the run script**
 
-`grep -B 2 NPCOL run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`
+```csh
+grep -B 2 NPCOL run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
+```
 
 Output
 
@@ -50,14 +53,18 @@ else
 
 ```
 
-Note, that the multiplication of NPCOLxNPROW must equal the SLURM settings (nodes * ntasks-per-node)
+:::alert{type=info}
+Note, that the multiplication of `NPCOL x NPROW` must equal the number of MPI ranks, which is defined in the Slurm settings `nodes * ntasks-per-node`.
 
 Example.
 
-NPCOL x NPROW 
+```
+NPCOL x NPROW
 12    x 16    = 192
 
 nodes x ntasks-per-node
 
 3     x  64   = 192
+```
+:::
 
