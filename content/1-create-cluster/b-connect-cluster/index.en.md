@@ -10,13 +10,20 @@ weight: 22
     ![Connect cluster - shell](/static/images/1-connectcluster-shell.png)
 
 
-#### Option 1: CLI Connect
+#### Option 2: DCV
 
-1. Use the ParallelCluster Command Line Interface to connect from your computer to the cluster.
+1. After cluster creation completes, with the created cluster selected, choose **DCV** to access the cluster head node.
 
-`source ~/apc-ve/bin/activate\nsource ~/.nvm/nvm.sh`
+    ![Connect cluster - DCV](/static/images/1-connectcluster-dcv.png)
 
-`pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster`
+2. A new tab will pop up.
 
+* Your browser may prompt you about the pop-up. Please allow pop-ups from the AWS ParallelCluster UI domain. 
 
+* DCV uses self-signed certificates, and your browser may warn you about a potentials security risk. You will need to click on **Advanced**, and then **Accept the Risk and Continue**. 
 
+    ![Connect cluster - DCV pop-up](/static/images/1-connectcluster-dcvpopup.png)
+
+3. To launch a terminal (where the rest of the workshop will run), click **Activities**, then **Terminal**. 
+
+    ![Connect cluster - DCV terminal](/static/images/1-connectcluster-dcvterminal.png)
