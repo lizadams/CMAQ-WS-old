@@ -36,26 +36,18 @@ sudo su ec2-user
 
     ![sinfo](/static/images/1-gettoknow-sinfo.png)
 
-2. Change shell to csh
+2. We are going to use the [csh](https://github.com/tcsh-org/tcsh). First we copy the CMAQ settings to our `.cshrc` file, then add module file path, lastly we execute a `csh` shell.
 
-```
-cp /shared/pcluster-cmaq/install/dot.cshrc.pcluster ~/.cshrc
-```
-
-Edit the .cshrc to add the following statement
-
-```
-module use --append /shared/build/Modules/modulefiles
-```
-
-```
-csh
-```
+    ```csh
+    cp /shared/pcluster-cmaq/install/dot.cshrc.pcluster ~/.cshrc
+    echo 'module use --append /shared/build/Modules/modulefiles' >> $HOME/.cshrc
+    csh
+    ```
 
 
 3. **List jobs in the queues or running.** Obviously, there won’t be any since we have not submitted anything… yet!
 
-    ```bash
+    ```csh
     squeue
     ```
 
@@ -67,9 +59,9 @@ csh
 
 [Environment Modules](http://modules.sourceforge.net/) or [Lmod](https://lmod.readthedocs.io/en/latest/) are fairly standard tools in HPC that are used to dynamically change your environment variables (`PATH`, `LD_LIBRARY_PATH`, etc.).
 
-3. **List available modules** You’ll notice that every cluster comes with *intelmpi* and *openmpi* pre-installed. These MPI versions are compiled with support for the high-speed interconnect EFA.
+4. **List available modules** You’ll notice that every cluster comes with *intelmpi* and *openmpi* pre-installed. These MPI versions are compiled with support for the high-speed interconnect EFA.
 
-    ```bash
+    ```csh
     module avail
     ```
 
@@ -77,11 +69,11 @@ csh
 
     ![module avail](/static/images/1-gettoknow-moduleavail.png)
 
-4. **Load a particular module.** In this case, this command loads Intel MPI in your environment and checks the path of *mpirun*.
+5. **Load a particular module.** In this case, this command loads Intel MPI in your environment and checks the path of *mpirun*.
 
-    ```bash
+    ```csh
     module load ioapi-3.2/gcc-9.5-netcdf  netcdf-4.8.1/gcc-9.5 openmpi/4.1.5 libfabric-aws
-    which mpirun 
+    which mpirun
     ```
 
     **Output**:
@@ -90,11 +82,11 @@ csh
 
 #### Filesystems
 
-5. **List mounted volumes.** A few volumes are shared by the head-node via NFS and will be mounted on compute instances when they boot up. Both /fsx and /home are accessible by all nodes.
+6. **List mounted volumes.** A few volumes are shared by the head-node via NFS and will be mounted on compute instances when they boot up. Both /fsx and /home are accessible by all nodes.
 
 * **Check the amount of available disk space for all file systems**. When we created the cluster, we also created a Lustre filesystem with FSx Lustre. We can see where it was mounted and the storage size by running:
 
-    ```bash
+    ```csh
     df -hT
     ```
   
@@ -103,7 +95,7 @@ csh
 
 * Print the list of exported NFS-based filesystems on the head node.
 
-    ```bash
+    ```csh
     showmount -e localhost
     ```
 
