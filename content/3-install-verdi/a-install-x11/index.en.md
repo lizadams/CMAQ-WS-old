@@ -49,12 +49,3 @@ Relogin to the cluster
 Test display
 
 `display`
-
-Output
-
-### Install VERDI
-
-```csh
-cd /shared/build
-wget https://github.com/CEMPD/VERDI/releases/download/2.1.1/VERDI_2.1.4_linux64_20230425.tar.gz
-```
