@@ -26,13 +26,19 @@ perl -i -pe ' \
   ' run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-2. **Submit the Run script to the SLURM queue**
+2. Load the Environment Modules
+
+```csh
+module load gcc/gcc-9.3 ioapi-3.2/gcc-9.3-netcdf netcdf-4.8.1/gcc-9.3
+```
+
+3. **Submit the Run script to the SLURM queue**
 
 ```csh
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-3. **Check the status of the job**
+4. **Check the status of the job**
 
 ```csh
 squeue
