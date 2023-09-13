@@ -9,7 +9,7 @@ Now that you are connected to the head node, you can familiarize yourself with t
 [SLURM](https://slurm.schedmd.com/) from SchedMD is one of the resource manager that you can use in AWS ParallelCluster. For an overview of the SLURM commands, see the [SLURM Quick Start User Guide](https://slurm.schedmd.com/quickstart.html). If you are familar with PBS, here is the [PBS-Slurm Conversion Cheat Sheet](https://www.nrel.gov/hpc/assets/pdfs/pbs-to-slurm-translation-sheet.pdf)
 :::
 
-Your bash user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
+Your user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
 
 ```bash
 sudo su ec2-user
@@ -36,7 +36,23 @@ sudo su ec2-user
 
     ![sinfo](/static/images/1-gettoknow-sinfo.png)
 
-2. We are going to use the [csh](https://github.com/tcsh-org/tcsh). First we copy the CMAQ settings to our `.cshrc` file, then add module file path, lastly we execute a `csh` shell.
+2. We are going to use the [csh](https://github.com/tcsh-org/tcsh). First we change the shell to use .tcsh, then copy the CMAQ settings to our `.cshrc` file, then add module file path, lastly we execute a `csh` shell.
+
+    ```csh
+    sudo usermod -s /bin/tcsh ec2-user
+    ```
+
+3. Log out and log back in to have the tcsh shell be active
+
+     ```csh
+     exit
+     ```
+
+     ```csh  
+     pcluster ssh -v -Y -i ~/your-key.pem --cluster-name cmaq --region us-east-1
+     ```
+
+3. Copy the CMAQ settings to our `.cshrc` file, then add module file path, lastly we execute a `csh` shell.
 
     ```csh
     cp /shared/pcluster-cmaq/install/dot.cshrc.pcluster ~/.cshrc
