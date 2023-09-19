@@ -11,8 +11,10 @@ weight: 20
 
 2. Install Imagemagick
 
-`sudo yum makecache fast`
- `sudo yum install ImageMagick ImageMagick-devel`
+```csh
+sudo yum makecache fast
+sudo yum install ImageMagick ImageMagick-devel
+```
 
 3. Enable X11 forwarding
 
