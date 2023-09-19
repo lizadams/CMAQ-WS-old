@@ -1,51 +1,39 @@
 ---
-title: Install X11 and Display
+title: Run Rscrpt to analyze difference between with DESID Emissions and the base case (no emission reduction) 
 weight: 20
 --- 
 
-###  Install X-11 Display
+###  Connect to the NICE DCV 
 
-1. Update package manager
+1. Select Activities, then click on Terminal Image (MATE Terminal)
 
-`sudo yum update`
 
-2. Install Imagemagick
 
-`sudo yum makecache fast`
- `sudo yum install ImageMagick ImageMagick-devel`
+2. Change directories to the location of the Jupyter Notebook 
 
-3. Enable X11 forwarding
-
-```
-sudo vi /etc/ssh/sshd_config
+```csh
+cd /shared/pcluster-cmaq/qa_scripts/workshop
 ```
 
-add line
+3. Run Jupyter Notebook 
 
 ```
-X11Forwarding yes
+Jupyter Notebook
 ```
 
-Verify that it was added
+4. Select the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
 
+5. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
+
+6. In the section "Set up your Inputs" you will use shift+enter, then enter the value, and then enter to submit the answer.
+
+7. After the last cell is run, you should see output such as: 
+
+There are no differences in GLYD, ..
+
+8. Go to the output directory and use display to visualize the results
+
+```csh
+/fsx/data/output/images/
+display NH3_difference_between_Base_Case_vs_Sens_Case_on_12-22-2017_14:*
 ```
-sudo cat /etc/ssh/sshd_config | grep -i X11Forwarding
-```
-
-Restart ssh
-
-```
-sudo service sshd restart
-```
-
-Exit the cluster
-
-`exit`
-
-Relogin to the cluster
-
-`pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster`
-
-Test display
-
-`display`
