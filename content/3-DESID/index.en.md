@@ -10,7 +10,7 @@ During this DESID exercise, you will:
 
 * Review the DESID Documentation in Appendix B of the CMAQ User Manual: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Appendix/CMAQ_UG_appendixB_emissions_control.md#appendix-b-emissions-input-and-control
 * Review the DESID Tutorial: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/CMAQ_UG_tutorial_emissions.md
-* Edit CMAQ DESID Control Files: CMAQ_Control_DESID.nml and CMAQ_Control_DESID_cb6r5_ae7_aq.nml to specify a region and to multiply an emissions factor to the EGU sources by a factor of .25 to approximate shutting down coal fired power plants in New York and transitioning to renewable sources.
+* Edit CMAQ DESID Control Files: CMAQ_Control_DESID.nml and CMAQ_Control_DESID_cb6r5_ae7_aq.nml to specify a region and to multiply an emissions factor to the EGU sources by a factor of .75 to approximate shutting down coal fired power plants in New York and transitioning to renewable sources.
 * Activate Region-Based Scaling to only reduce emissions from EGU plants from New York State.
 * Activate DESID Diagnostics to verify that the Emissions from PT_EGU sources within New York State were reduced by 25%.
 * Execute a new CCTM simulation that uses modified DESID Control Files to reduce emissions.
