@@ -1,5 +1,5 @@
 ---
-title: Prepare cluster
+title: Prepare cluster and enable X11 display
 weight: 23
 --- 
 
@@ -18,21 +18,52 @@ sudo su ec2-user
     sudo yum update
     sudo amazon-linux-extras install epel -y
     ```
-2. **Enable X11 Display**
-
-   ```csh
-   sudo yum makecache fast
-   sudo yum install ImageMagick ImageMagick-devel
-   ```
-
-3. Add 
-
-   ```csh
-   sudo vi /etc/ssh/sshd_config
-   ```
-
-4. **Add Firefox Browser**
+2. **Add Firefox Browser**
 
    ```csh
    sudo amazon-linux-extras install firefox
    ```
+
+3. Install Imagemagick
+
+```csh
+sudo yum makecache fast
+sudo yum install ImageMagick ImageMagick-devel
+```
+
+4. Enable X11 forwarding
+
+```
+sudo vi /etc/ssh/sshd_config
+```
+
+add line
+
+```
+X11Forwarding yes
+```
+
+Verify that it was added
+
+```
+sudo cat /etc/ssh/sshd_config | grep -i X11Forwarding
+```
+
+Restart ssh
+
+```
+sudo service sshd restart
+```
+
+Exit the cluster
+
+`exit`
+
+Relogin to the cluster
+
+`pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster`
+
+Test display
+
+`display`
+
