@@ -15,6 +15,8 @@ cd output_v54+_cb6r5_ae7_aq_WR413_MYR_gcc_2018_12US1_3x64_classic_DESID_REDUCE
 grep -A 20 'Stream Type: "Point Emissions File   2' CTM_LOG_001*
 ```
 
+Output:
+
 ```csh
      Stream Type: "Point Emissions File   2" | Sector Label: PT_EGU (04)
 
