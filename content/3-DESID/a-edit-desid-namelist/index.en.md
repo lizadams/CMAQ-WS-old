@@ -23,7 +23,7 @@ https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/CMAQ_UG_tutor
 
 ```csh
    ! PT_EGU Emissions Scaling reduce PT_EGU emissions in New York by 25%. Note, to reduce the emissions by 25% we use DESID to multiply what had been 100% emissions by .75, so that the resulting emissions is reduced by 25%.
-   'NY'  , 'PT_EGU_NOPFAS'      ,'All'    ,'All'         ,'All' ,.75    ,'UNIT','o',
+   'NY'  , 'PT_EGU'      ,'All'    ,'All'         ,'All' ,.75    ,'UNIT','o',
 ```
 
 3. **Activate DESID Diagnostics**
@@ -48,7 +48,7 @@ Modify the following section, note the CMAQ_MASKS file is defined in the DESID R
 /
 ```
 
-4. **Create two stream family definitions, one that includes all point source emissions, and the second that only contains PT_EGU_NOPFAS**
+4. **Create two stream family definitions, one that includes all point source emissions, and the second that only contains PT_EGU**
 
 ```csh
 !------------------------------------------------------------------------------!
@@ -66,10 +66,10 @@ Modify the following section, note the CMAQ_MASKS file is defined in the DESID R
 ! For emission streams available in several run scripts under CCTM/scripts
 
   StreamFamilyName(1)     = 'PT_SOURCES'
-  StreamFamilyMembers(1,1:8)= 'PT_NONEGU','PT_EGU_NOPFAS','PT_OILGAS','PT_CMV_C3'
+  StreamFamilyMembers(1,1:8)= 'PT_NONEGU','PT_OTHER', 'PT_AGFIRES', 'PT_FIRES', 'PT_RXFIRES', 'PT_OTHFIRES', 'PT_OILGAS','PT_CMV_C1C2'
 
   StreamFamilyName(2)     = 'PT_EGUS'
-  StreamFamilyMembers(2,1:1)= 'PT_EGU_NOPFAS'
+  StreamFamilyMembers(2,1:1)= 'PT_EGU'
 &Desid_Diag
 ```
 

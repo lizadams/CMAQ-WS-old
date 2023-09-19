@@ -16,7 +16,7 @@ grep -A 20 'Stream Type: "Point Emissions File   2' CTM_LOG_001*
 ```
 
 ```csh
-    Stream Type: "Point Emissions File   2" | Sector Label: PT_EGU (04)
+     Stream Type: "Point Emissions File   2" | Sector Label: PT_EGU (04)
 
         Table of Aerosol Size Distributions Available for Use Sector-Wide.
         Note that Mode 1 is reserved for gas-phase species and emission variable.
@@ -28,15 +28,15 @@ grep -A 20 'Stream Type: "Point Emissions File   2' CTM_LOG_001*
         CMAQ Species     Phase/Mode  Em. Var.          Region             Op ScaleFac Basis FinalFac
         ------------     ----------  ---------         ------             -- -------- ----- --------
           NO2              GAS        NO2              EVERYWHERE         a   1.000    UNIT   1.000
+                                                       NY                 o   0.750    UNIT   0.750
           NO               GAS        NO               EVERYWHERE         a   1.000    UNIT   1.000
+                                                       NY                 o   0.750    UNIT   0.750
           HONO             GAS        HONO             EVERYWHERE         a   1.000    UNIT   1.000
+                                                       NY                 o   0.750    UNIT   0.750
           SO2              GAS        SO2              EVERYWHERE         a   1.000    UNIT   1.000
+                                                       NY                 o   0.750    UNIT   0.750
           SULF             GAS        SULF             EVERYWHERE         a   0.000    UNIT   0.000
-          ALD2             GAS        ALD2             EVERYWHERE         a   1.000    UNIT   1.000
-          FORM             GAS        FORM             EVERYWHERE         a   1.000    UNIT   1.000
-          MEOH             GAS        MEOH             EVERYWHERE         a   1.000    UNIT   1.000
-          CO               GAS        CO               EVERYWHERE         a   1.000    UNIT   1.000
-          ALDX             GAS        ALDX             EVERYWHERE         a   1.000    UNIT   1.000
+                                                       NY                 o   0.750    UNIT   0.750
 ```
 
 2. **Submit the Run script to the SLURM queue**
