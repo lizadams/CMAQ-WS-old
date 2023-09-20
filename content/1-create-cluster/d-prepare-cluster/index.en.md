@@ -1,5 +1,5 @@
 ---
-title: Prepare cluster and enable X11 display
+title: Prepare cluster and enable X11 display (only if display doesn't work)
 weight: 23
 --- 
 
@@ -10,6 +10,16 @@ sudo su ec2-user
 ```
 
 ![ec2-user](/static/images/1-gettoknow-ec2user.png)
+
+1. **Test to see if X11 is already enabled**
+
+```csh
+display
+```
+
+------
+
+Only use these instructions if you have checked with the instructor to verify that display is not working:
 
 1. **Update Yum**
 
