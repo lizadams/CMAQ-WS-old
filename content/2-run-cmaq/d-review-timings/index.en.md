@@ -3,10 +3,6 @@ title: Review timings for CMAQ on the HPC7g Cluster
 weight: 23
 ---
 
-:::alert{type=info}
-links to CMAQ EPA site
-:::
-
 
 1. **Change directories to the run script location**
 
