@@ -1,5 +1,5 @@
 ---
-title: Run Rscrpt to analyze difference between with DESID Emissions and the base case (no emission reduction) 
+title: Run an R script to analyze difference between with DESID Emissions and the base case (no emission reduction) 
 weight: 20
 --- 
 
@@ -15,9 +15,9 @@ weight: 20
 cd /shared/pcluster-cmaq/qa_scripts/workshop
 ```
 
-3. Run Jupyter 
+3. Run the R script 
 
 ```
-Rscript 
+Rscript compare_EQUATES_benchmark_output_CMAS_pcluster_hpc7g.18xlarge.DESID_vs_base.r
 
 ```

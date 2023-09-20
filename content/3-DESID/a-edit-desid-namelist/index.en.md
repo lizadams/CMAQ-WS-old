@@ -3,11 +3,6 @@ title: Edit DESID Namelists to Reduce Point Source EGU Emissions by 25%
 weight: 23
 ---
 
-:::alert{type=info}
-links to CMAQ EPA site
-:::
-
-
 1. **Edit the CMAQ DESID Chemical Species Control File**
 
 ```csh

@@ -9,6 +9,25 @@ weight: 22
 
     ![Connect cluster - shell](/static/images/1-connectcluster-shell.png)
 
+2. Switch to .tcsh shell 
+
+```csh
+cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc 
+```
+
+3. Change to .tcsh shell
+
+```csh
+/bin/tcsh
+``` 
+
+4. Verify that the environment modules have  been loaded
+
+```
+module list
+```
+
+
 
 #### Option 2: DCV
 

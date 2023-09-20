@@ -3,7 +3,13 @@ title: Run VERDI on HPC cluster
 weight: 20
 --- 
 
-### Run verdi to look at Ozone
+### Run VERDI to look at Ozone
+
+Note, it is difficult to copy and paste content to the NICE DCV.
+
+Please use the following scripted versions.
+
+
 
 ```csh
 cd /fsx/data/output/output_v54+_cb6r5_ae7_aq_WR413_MYR_gcc_2018_12US1_3x64_classic/
