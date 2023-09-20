@@ -17,11 +17,13 @@ cd /shared/pcluster-cmaq/qa_scripts/workshop
 
 3. Run Jupyter Notebook 
 
-```
-Jupyter Notebook
+```csh
+jupyter notebook
 ```
 
 4. Select the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
+
+![Select the Jupyter Notebook](static/images/PM25_NY_PTEGU_EMIS_REDUCED.gif)
 
 5. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
 
