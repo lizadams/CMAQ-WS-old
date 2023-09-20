@@ -36,5 +36,7 @@ Then select Start on the Animate Plot window.
 
 An example of this animation is available:
 
+Test
+
 ![Change in PM2.5 due to Emission Reduction of PT_EGU in NY](static/images/PM25_NY_PTEGU_EMIS_REDUCED.gif)
 
