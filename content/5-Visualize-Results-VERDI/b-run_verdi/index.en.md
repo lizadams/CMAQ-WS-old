@@ -36,7 +36,5 @@ Then select Start on the Animate Plot window.
 
 An example of this animation is available:
 
-Test
-
 ![Change in PM25](static/images/5-PM25_NY_PTEGU_EMIS_REDUCED.gif)
 
