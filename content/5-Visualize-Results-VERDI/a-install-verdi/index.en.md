@@ -3,11 +3,12 @@ title: Install VERDI on HPC cluster
 weight: 20
 --- 
 
-### Login to cluster (if not already logged in)
+### Login to cluster using the Nice DCV 
 
-```csh
-pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster
-```
+### Select Activities > Show Applications > Select MATE Terminal
+
+[dcv-terminal](static/images/5-dcv-select-terminal.png)
+
 
 ### Verify that VERDI is installed
 
