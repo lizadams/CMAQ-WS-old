@@ -17,6 +17,10 @@ sudo su ec2-user
 display
 ```
 
+Output
+
+![ImageMagick Display](/static/images/1-imagemagick-display.png)
+
 ------
 
 Only use these instructions if you have checked with the instructor to verify that display is not working:
