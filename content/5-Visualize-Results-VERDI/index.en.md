@@ -1,5 +1,5 @@
 ---
-title: Visualize Results using VERDI 
+title: "Visualize Results using VERDI"
 weight: 20
 --- 
 
