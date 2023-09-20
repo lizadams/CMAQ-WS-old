@@ -1,5 +1,5 @@
 ---
-title: Install VERDI on HPC cluster
+title: Visualize Results using VERDI 
 weight: 20
 --- 
 
