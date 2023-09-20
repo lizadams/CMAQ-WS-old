@@ -75,9 +75,7 @@ Exit the cluster
 
 Relogin to the cluster
 
-`pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster`
-
-Test display
+5. Test display
 
 `display`
 
