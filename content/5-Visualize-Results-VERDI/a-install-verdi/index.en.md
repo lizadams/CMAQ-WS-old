@@ -18,7 +18,7 @@ which verdi.sh
 ### Verify headless display is available
 
 ```csh
-ls /usr/lib/jvm/java-17-amazon-corretto.aarch64/lib`
+ls /usr/lib/jvm/java-17-amazon-corretto.aarch64/lib
 ```
 
 ### If needed, install library for headless display
