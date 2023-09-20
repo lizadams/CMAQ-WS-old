@@ -1,38 +1,39 @@
 ---
-title: Install VERDI on HPC cluster
+title: Run Jupyter Notebook to analyze difference between with DESID Emissions and the base case (no emission reduction) 
 weight: 20
 --- 
 
-### Login to cluster (if not already logged in)
+###  Connect to the NICE DCV 
+
+1. Select Activities, then click on Terminal Image (MATE Terminal)
+
+
+
+2. Change directories to the location of the Jupyter Notebook 
 
 ```csh
-pcluster ssh -v -Y -i ~/cmas.pem --region=us-east-1 --cluster-name cmaq-cluster
+cd /shared/pcluster-cmaq/qa_scripts/workshop
 ```
 
-### Install VERDI
+3. Run Jupyter Notebook 
 
-```csh
-cd /shared/build
-wget https://github.com/CEMPD/VERDI/releases/download/2.1.1/VERDI_2.1.4_linux64_20230425.tar.gz
+```
+Jupyter Notebook
 ```
 
-### Extract VERDI software
+4. Select the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
+
+5. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
+
+6. In the section "Set up your Inputs" you will use shift+enter, then enter the value, and then enter to submit the answer.
+
+7. After the last cell is run, you should see output such as: 
+
+There are no differences in GLYD, ..
+
+8. Go to the output directory and use display to visualize the results
 
 ```csh
-cd /shared/build
-tar -xzvf VERDI_2.1.4_linux64_20230425.tar.gz
-```
-
-### Install library for headless display
-
-```csh
-wget https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-aarch64_bin.rpm
-sudo rpm -ivh jdk-17.0.8_linux-aarch64_bin.rpm
-```
-
-
-### Verify headless display is available
-
-```csh
-ls /usr/lib/jvm/java-17-amazon-corretto.aarch64/lib`
+/fsx/data/output/images/
+display NH3_difference_between_Base_Case_vs_Sens_Case_on_12-22-2017_14:*
 ```
