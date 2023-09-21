@@ -13,10 +13,6 @@ Instructions:
 
 1. **Click on Browse Bucket to explore the data on the S3 bucket**
 
-```csh
-https://cmas-cmaq.s3.amazonaws.com/index.html
-```
-
 Output:
 
 ![cmaq benchmark data on s3](/static/images/2-browse-cmas-cmaq-s3-bucket.png)
