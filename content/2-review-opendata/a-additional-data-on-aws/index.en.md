@@ -5,10 +5,6 @@ weight: 23
 
 The [CMAS Data Warehouse](https://registry.opendata.aws/cmas-data-warehouse/) 
 
-is locaed within the Registry of Open Data on AWS contains several S3 buckets that are open to public use.
-
-
-
 **Description of Data currently available:**
 
 
