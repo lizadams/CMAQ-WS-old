@@ -14,3 +14,7 @@ Doing all parts of this workshop should take approximately 3 hours.
 This workshop is designed for builders who want to learn more about running CMAQ within AWS.
 
 ![Surface temperature](static/images/0-PM25_VERDI.gif)
+
+**Region specific constraints**
+
+In order to successfully run this workshop, you should select a region where Amazon EC2 hpc7g instances are available.
