@@ -1,5 +1,5 @@
 ---
-title: Install VERDI on HPC cluster
+title: "Install VERDI on HPC cluster"
 weight: 20
 ---
 

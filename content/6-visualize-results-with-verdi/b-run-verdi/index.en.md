@@ -1,5 +1,5 @@
 ---
-title: Use VERDI to visualize the change in Ozone and PM2.5 due to reducing emissions from PT_EGU sources in New York 
+title: "Use VERDI to visualize the change in Ozone and PM2.5 due to reducing emissions from PT_EGU sources in New York"
 weight: 20
 --- 
 
