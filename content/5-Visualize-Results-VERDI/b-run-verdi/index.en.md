@@ -33,3 +33,8 @@ Select
 Plot > Animate Plot
 
 Then select Start on the Animate Plot window.
+
+Where would you expect to see differences in concentrations between the base case and the DESID case?
+
+Remember that the DESID run reduced PT_EGU emissions within NY by 25%, so we would only expect to see emissions changes due to that.
+The extent of the impact will go beyond NY State, depending on the wind direction and wind speed that day.
