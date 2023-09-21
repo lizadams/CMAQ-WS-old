@@ -7,7 +7,7 @@ weight: 20
 
 ### Select Activities > Show Applications > Select MATE Terminal
 
-1. Select the DCV Terminal
+1. Select Terminal within the DCV
 
    ![DCV terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
