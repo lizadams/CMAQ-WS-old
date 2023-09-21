@@ -102,7 +102,13 @@ sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ssh -Y compute-dy-hpc7g-1
 ```
 
-9. **Run htop on the compute node**
+9. **Install htop on the compute node**
+
+```csh
+sudo yum install htop
+```
+
+10. **Run htop on the compute node**
 
 ```csh
 htop
@@ -112,6 +118,6 @@ Output
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-10. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
+11. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 
