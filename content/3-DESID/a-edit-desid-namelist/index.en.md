@@ -34,7 +34,7 @@ cp CMAQ_Control_DESID.nml CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
 gedit  CMAQ_Control_DESID_RED_EGU_POINT_NY.nml &
 ```
 
-Modify the following section, note the CMAQ_MASKS file is defined in the DESID Run script.
+Modify the following section to use the NY region that is specified in the CMAQ_MASKS file, note the CMAQ_MASKS file is defined in the DESID Run script.
 
 ```csh
 &Desid_RegionDef
@@ -104,7 +104,7 @@ Note, if you define only one diagnostic rule, you must comment out all other rul
 diff CMAQ_Control_DESID_RED_EGU_POINT_NY.nml $ANSWERS/CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
 ```
 
-2. **Copy the Run script and edit it to use the DESID namelist files**
+3. **Copy the Run script and edit it to use the DESID namelist files**
 
 ```csh
 cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/BLD_CCTM_v54+_gcc
