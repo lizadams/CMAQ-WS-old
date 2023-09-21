@@ -16,7 +16,7 @@ cd /shared/pcluster-cmaq/qa_scripts/workshop
 ### Run VERDI to look at the change in PM2.5
 
 ```csh
-/shared/build/VERDI_2.1.2/verdi.sh -f $cwd/CCTM_AELMO_v54+_cb6r5_ae7_aq_WR413_MYR_gcc_2018_12US1_3x64_classic_20171222.nc
+./verdi_compare_NO2_CONC_DESID_vs_base.csh
 ```
 
 ### Zoom in to the State of New York
