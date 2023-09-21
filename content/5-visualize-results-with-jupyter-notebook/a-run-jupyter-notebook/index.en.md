@@ -7,8 +7,6 @@ weight: 20
 
 1. Select Activities, then click on Terminal Image (MATE Terminal)
 
-
-
 2. Change directories to the location of the Jupyter Notebook 
 
 ```csh

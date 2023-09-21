@@ -1,7 +1,7 @@
 ---
 title: Install VERDI on HPC cluster
 weight: 20
---- 
+---
 
 ### Login to cluster using the Nice DCV 
 
