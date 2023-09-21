@@ -3,7 +3,7 @@ title: VERDI Tile Plots
 weight: 20
 --- 
 
-Plot of PM25 Plot from reducing PT_EGU emissions by 25% in NY::
+Plot of PM25 Plot from reducing PT_EGU emissions by 25% in NY
 
 ![reduced-emissions-vis](static/images/6-verdi-pm-reduced-vis.png)
 
