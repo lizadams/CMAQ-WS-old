@@ -62,6 +62,6 @@ htop
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-5. HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.
+5. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 

@@ -5,7 +5,11 @@ weight: 23
 
 Note, for all of these instructions click the copy content icon button on the top right of each panel and then use Control^V to paste the contents into the SSM Connnect Terminal or the DCV Terminal. 
 
+Example image:
+
 ![click to copy contents](/static/images/2-click-to-copy-from-terminal.png)
+
+Instructions:
 
 1. **View the top of the run script.**
 
