@@ -7,7 +7,7 @@ weight: 20
 
 ### Select Activities > Show Applications > Select MATE Terminal
 
-[dcv-terminal](static/images/6-verdi-dcv-select-terminal.png)
+![dcv-terminal](static/images/6-verdi-dcv-select-terminal.png)
 
 
 ### Verify that VERDI is installed
