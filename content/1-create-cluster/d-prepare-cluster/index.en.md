@@ -5,7 +5,7 @@ weight: 23
 
 Your user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
 
-```bash
+```csh
 sudo su ec2-user
 ```
 
@@ -47,25 +47,25 @@ sudo yum install ImageMagick ImageMagick-devel
 
 4. Enable X11 forwarding
 
-```
+```csh
 sudo vi /etc/ssh/sshd_config
 ```
 
 add line
 
-```
+```csh
 X11Forwarding yes
 ```
 
 Verify that it was added
 
-```
+```csh
 sudo cat /etc/ssh/sshd_config | grep -i X11Forwarding
 ```
 
 Restart ssh
 
-```
+```csh
 sudo service sshd restart
 ```
 
@@ -79,4 +79,4 @@ Relogin to the cluster
 
 `display`
 
-If display still doesn't work, then try using the DCV.
+If display still doesn't work, then try running the display command on the terminal within the DCV.
