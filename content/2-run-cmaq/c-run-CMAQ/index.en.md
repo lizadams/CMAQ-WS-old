@@ -121,3 +121,4 @@ Output
 11. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 
+12. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.
