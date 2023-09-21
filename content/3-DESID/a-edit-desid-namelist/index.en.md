@@ -1,5 +1,5 @@
 ---
-title: Edit DESID Namelists to Reduce Point Source EGU Emissions by 25% 
+title: Edit DESID Namelists to Reduce Point Source EGU Emissions by 25%  (optional)
 weight: 23
 ---
 
@@ -98,10 +98,10 @@ Note, if you define only one diagnostic rule, you must comment out all other rul
     Desid_Diag_Spec_Nml(1,:)   = 'ALL'
 ```
 
-6. **Verify that the settings are correct by comparing to the $ANSWERS directory**
+6. **Verify that the settings are correct by comparing to the version in the github repo directory**
 
 ```csh
-diff CMAQ_Control_DESID_RED_EGU_POINT_NY.nml $ANSWERS/CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
+diff CMAQ_Control_DESID_RED_EGU_POINT_NY.nml /shared/pcluster-cmaq/qa_scripts/workshop/CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
 ```
 
 3. **Copy the Run script and edit it to use the DESID namelist files**
