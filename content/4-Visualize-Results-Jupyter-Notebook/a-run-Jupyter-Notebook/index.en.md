@@ -1,7 +1,7 @@
 ---
 title: Run Jupyter Notebook to analyze difference between with DESID Emissions and the base case (no emission reduction) 
 weight: 20
---- 
+---
 
 ###  Connect to the NICE DCV 
 
@@ -31,10 +31,7 @@ jupyter notebook
 
 5. Double Click on the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
 
-
 ![jupyter-notebook](static/images/4-jupyter-notebook.png)
-
-
 
 6. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
 
