@@ -7,11 +7,11 @@ The CMAS Data Warehouse within the Registry of Open Data on AWS contains several
 
 The CMAQ Benchmark Data used for this training comes from the following S3 bucket.
 
-![cmaq benchmark data on s3](/static/images/2-cmaq-benchmark-data-s3.png)
+   ![cmaq benchmark data on s3](/static/images/2-cmaq-benchmark-data-s3.png)
 
 Instructions:
 
-1. **Click on Browse Bucket to explore the data on the S3 bucket**
+1. **Click on [Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html) to explore the data on the S3 bucket**
 
 Output:
 
