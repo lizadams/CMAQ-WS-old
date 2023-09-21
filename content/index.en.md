@@ -9,7 +9,7 @@ HPC on AWS removes the long wait times and lost productivity often associated wi
 
 Find our Weather HPC customer case studies at https://aws.amazon.com/hpc/customers/, under **Weather**.
 
-Doing all parts of this workshop should take approximately 4 hours.
+Doing all parts of this workshop should take approximately 3 hours.
 
 This workshop is designed for builders who want to learn more about running CMAQ within AWS.
 

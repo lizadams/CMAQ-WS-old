@@ -3,10 +3,6 @@ title: Review timings for CMAQ on the HPC7g Cluster
 weight: 23
 ---
 
-:::alert{type=info}
-links to CMAQ EPA site
-:::
-
 
 1. **Change directories to the run script location**
 
@@ -49,6 +45,6 @@ Num  Day        Wall Time
 ```
 
 
-3. **Commpare the timing with the results in the [CMAQ on AWS Tutorial](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/Performance-Opt/performance-optimization.html#benchmark-timing-for-hpc7g-16xlarge-with-64-processors-per-node)**
+3. **Compare the timing with the results in the [CMAQ on AWS Tutorial](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/Performance-Opt/performance-optimization.html#benchmark-timing-for-hpc7g-16xlarge-with-64-processors-per-node)**
 
 Note, the timings reported on the Tutorial are for 2 days, rather than 1 day
