@@ -26,7 +26,7 @@ perl -i -pe ' \
   ' run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-2. Load the Environment Modules
+2. **Load the Environment Modules**
 
 ```csh
 module load gcc/gcc-9.3 ioapi-3.2/gcc-9.3-netcdf netcdf-4.8.1/gcc-9.3
