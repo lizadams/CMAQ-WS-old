@@ -75,6 +75,26 @@ sudo su ec2-user
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
+8. CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+
+```
+   Processing Day/Time [YYYYDDD:HHMMSS]: 2017356:002000
+       Which is Equivalent to (UTC): 0:20:00  Friday,  Dec. 22, 2017
+       Time-Step Length (HHMMSS): 000500
+                 VDIFF completed...       0.3878 seconds
+                COUPLE completed...       0.0302 seconds
+                  HADV completed...       1.4396 seconds
+                  ZADV completed...       0.1839 seconds
+                 HDIFF completed...       0.1390 seconds
+              DECOUPLE completed...       0.0332 seconds
+                  PHOT completed...       0.3996 seconds
+               CLDPROC completed...       0.1185 seconds
+                  CHEM completed...       0.6113 seconds
+                  AERO completed...       0.9983 seconds
+            Master Time Step
+            Processing completed...       4.3451 seconds
+```
+
 
 8. **Login to the compute node**
 
@@ -82,7 +102,7 @@ sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ssh -Y compute-dy-hpc7g-1
 ```
 
-5. **Run htop on the compute node**
+9. **Run htop on the compute node**
 
 ```csh
 htop
@@ -92,6 +112,6 @@ Output
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-6. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
+10. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 
