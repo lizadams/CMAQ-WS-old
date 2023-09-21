@@ -35,7 +35,7 @@ cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc
 
 5. Verify that the environment modules have  been loaded
 
-```
+```csh
 module list
 ```
 
