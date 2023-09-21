@@ -5,6 +5,10 @@ weight: 20
 
 ### DESID
 
+:::alert{type=info}
+The Visualization using VERDI and Jupyter Notebook do not require this lab, as the output files from this lab were pre-generated and saved. Please review the instructions for how to modify CMAQ to run DESID.
+:::
+
 
 During this DESID exercise, you will:
 
