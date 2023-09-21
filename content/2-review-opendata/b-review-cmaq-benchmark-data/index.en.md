@@ -22,9 +22,7 @@ Note, this data is uncompressed and saved in a directory structure that matches 
 
 2. **Review the top section of the readme.html**
 
-```csh
-https://cmas-cmaq.s3.amazonaws.com/readme.html
-```
+[readme.html](https://cmas-cmaq.s3.amazonaws.com/readme.html)
 
 Output (top 6 lines)
 
@@ -53,7 +51,7 @@ Total Objects: 247
 
 ```
 
-4. **How to copy data to local filesystem** (optional)
+4. **Command to copy data to local filesystem** (optional)
 
 Command to copy files from the bucket to your local filesystem (the system where you are running the aws cli) and place it under the path that you specify for /your_local_path.
 
