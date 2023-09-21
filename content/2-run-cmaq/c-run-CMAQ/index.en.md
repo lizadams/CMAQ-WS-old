@@ -55,15 +55,43 @@ Output
 
 Wait for the status to change from CF to R
 
-4. **Login to the compute node and run htop**
+5. If the job fails to run, then verify your username is ec2-user
+
+```csh
+whoami
+```
+
+If the output is ssm-user, then use the following command to switch users, and resubmit the job.
+
+6. Switch to ec2-user
+
+```csh
+sudo su ec2-user
+```
+
+7. **Re-Submit the Run script to the SLURM queue**
+
+```csh
+sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
+```
+
+
+8. **Login to the compute node**
 
 ```csh
 ssh -Y compute-dy-hpc7g-1
+```
+
+5. **Run htop on the compute node**
+
+```csh
 htop
 ```
 
+Output
+
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-5. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
+6. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 
