@@ -1,5 +1,5 @@
 ---
-title: VERDI Tile Plot
+title: VERDI Tile Plots
 weight: 20
 --- 
 
