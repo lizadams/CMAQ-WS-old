@@ -21,19 +21,19 @@ Your user should be similar to ec2-user@ip-<IP-address>. If it is otherwise some
 sudo su ec2-user
 ```
 
-2. Switch to .tcsh shell 
+3. Switch to .tcsh shell 
 
 ```csh
 cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc 
 ```
 
-3. Change to .tcsh shell
+4. Change to .tcsh shell
 
 ```csh
 /bin/tcsh
 ``` 
 
-4. Verify that the environment modules have  been loaded
+5. Verify that the environment modules have  been loaded
 
 ```
 module list
