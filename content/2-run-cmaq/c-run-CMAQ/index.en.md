@@ -14,17 +14,19 @@ The CMAQ run script has been configured to run on 192 cores (3 compute nodes of 
 cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts
 ```
 
-2. **Edit the run script (`run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`) to only run for 1 day**
+2. **Verify the run script (`run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`) is set to run for 1 day.
 
 ```csh
-perl -i -pe ' \
-  s/(#SBATCH -o)(.*)2day(.*)/${1}${2}1day${3}/; \
-  s/(#SBATCH -e)(.*)2day(.*)/${1}${2}1day${3}/; \
-  $d = qr/"\d{4}-\d{2}-\d{2}"/; \
-  $s = $1 if /set START_DATE = ($d)/; \
-  s/(\s+set\sEND_DATE\s+=)\s+$d(.*)/\1 ${s}\2/; \
-  ' run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
+grep _DATE run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
+
+Output
+
+```
+set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
+set END_DATE   = "2017-12-22"     #> ending date     
+```
+
 
 2. **Load the Environment Modules**
 
