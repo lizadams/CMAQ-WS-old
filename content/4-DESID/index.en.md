@@ -1,5 +1,5 @@
 ---
-title: Run CMAQ using DESID to reduce PT_EGU emissions by 25%
+title: Run CMAQ using DESID to reduce PT_EGU emissions by 25% (optional)
 weight: 20
 --- 
 
