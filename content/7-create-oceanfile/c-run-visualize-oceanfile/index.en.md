@@ -3,7 +3,7 @@ title: Run Visualize Ocean File Jupyter Notebook
 weight: 22
 --- 
 
-1. **Run Jupyter Notebook to add DMS and CHLO variables to an OCEANFILE**
+1. **Run Jupyter Notebook to visualize the DMS and CHLO variables that were added to the OCEANFILE**
 
 ```csh
 cd dmschlo
