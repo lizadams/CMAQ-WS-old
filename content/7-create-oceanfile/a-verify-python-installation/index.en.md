@@ -3,7 +3,7 @@ title: PYTOOLS Directory on Cluster
 weight: 21
 --- 
 
-1. Start the DCV
+1. **Start the DCV**
 
 2. **Change directories to the PYTOOLS location**
 
