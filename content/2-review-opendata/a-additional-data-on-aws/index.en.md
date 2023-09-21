@@ -1,5 +1,5 @@
 ---
-title: List of Data Currently on CMAS Data Warehouse on Registry of Open Data on AWS 
+title: Data on CMAS Data Warehouse
 weight: 23
 ---
 
