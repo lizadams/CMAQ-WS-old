@@ -9,7 +9,7 @@ weight: 20
 
 1. Select the DCV Terminal
 
-   ![DCV terminal](static/images/6-verdi-dcv-select-terminal.png)
+   ![DCV terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
 
 ### Verify that VERDI is installed
