@@ -16,7 +16,7 @@ The instances have the following specifications:
 
 1. Download the cluster configuration file below:
 
-    :button[Download Template]{href="/static/cluster-config-hpc7g.yaml" action=download}
+    :button[Download Template]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
 
 2. In the home page of the AWS ParallelCluster UI, in **Clusters**, select `us-east-1` as your Region on the top-right side of the page, then choose **Create cluster**.
 
