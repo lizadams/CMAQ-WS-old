@@ -1,13 +1,13 @@
 ---
 title: Install VERDI on HPC cluster
 weight: 20
---- 
+---
 
 ### Login to cluster using the Nice DCV 
 
 ### Select Activities > Show Applications > Select MATE Terminal
 
-[dcv-terminal](static/images/5-dcv-select-terminal.png)
+![dcv-terminal](static/images/6-verdi-dcv-select-terminal.png)
 
 
 ### Verify that VERDI is installed
