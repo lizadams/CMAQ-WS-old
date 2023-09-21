@@ -32,5 +32,5 @@ d.  Circles the grid cell and area where the max difference occurs
 
 a) You run each cell by clicking in it and then pressing Enter+Shift
 b) You will be prompted to provide some inputs such as color schemes, and time zone information, etc
-c) This is in it's beta form so if you have any feedback or need any help feel free to e-mail Sara Farrell (Farrell.Sara@epa.gov) or submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 for help
+c) This is in it's beta form so if you have any feedback or need help, please submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 for help
 
