@@ -13,12 +13,7 @@ Instructions:
 
 1. **Click on [Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html) to explore the data on the S3 bucket**
 
-Output:
-
-![cmaq benchmark data on s3](/static/images/2-browse-cmas-cmaq-s3-bucket.png)
-
 Note, this data is uncompressed and saved in a directory structure that matches the CMAQ Benchmark scripts.
-
 
 2. **Review the top section of the readme.html**
 
