@@ -3,7 +3,7 @@ title: Data on CMAS Data Warehouse
 weight: 23
 ---
 
-The [CMAS Data Warehouse](https://registry.opendata.aws/cmas-data-warehouse/) 
+[CMAS Data Warehouse](https://registry.opendata.aws/cmas-data-warehouse/) 
 
 **Description of Data currently available:**
 
