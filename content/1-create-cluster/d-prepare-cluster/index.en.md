@@ -88,3 +88,9 @@ If display still doesn't work, then try running the display command on the termi
 ```csh
 /bin/tcsh
 ```  
+
+7. Run display on the terminal window within DCV
+
+```csh
+display
+```
