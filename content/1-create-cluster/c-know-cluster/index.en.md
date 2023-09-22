@@ -67,7 +67,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
 [Environment Modules](http://modules.sourceforge.net/) or [Lmod](https://lmod.readthedocs.io/en/latest/) are fairly standard tools in HPC that are used to dynamically change your environment variables (`PATH`, `LD_LIBRARY_PATH`, etc.).
 
-6. **List available modules**  The cluster has *openmpi* pre-installed. These MPI versions are compiled with support for the high-speed interconnect EFA.
+6. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
 
     ```csh
     module avail
@@ -77,7 +77,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
     ![module avail](/static/images/1-gettoknow-moduleavail.png)
 
-7. **List the modules that are loaded.** 
+7. **List the modules that are loaded, and the path to the version of mpirun that is being used** 
 
     ```csh
     module list
