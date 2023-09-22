@@ -42,15 +42,11 @@ sudo su ec2-user
    /bin/tcsh
    ```
 
-3. **List jobs in the queues or running.** Obviously, there won’t be any since we have not submitted anything… yet!
+3. **Verify shell**
 
-    ```csh
-    squeue
-    ```
-
-    **Output**:
-
-    ![squeue](/static/images/1-gettoknow-squeue.png)
+   ```csh
+   echo $SHELL 
+   ```
 
 #### Module Environment
 
