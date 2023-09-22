@@ -28,6 +28,6 @@ weight: 23
 
 :::alert{type=info}
 For this training, the data will be pre-loaded from the S3 bucket to the /fsx or Lustre File System from the CMAQ Benchmark Data S3 Bucket.
-In general, if the files are available in an intact directory structure, the module environment loaded for the run must match the netCDF file type. 
+To run CMAQ, the CMAQ run script specifies the directory location matching that on the S3 bucket and using a module environment that supports the netCDF file type.
 :::
 
