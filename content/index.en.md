@@ -18,3 +18,4 @@ This workshop is designed for modelers who want to learn more about running CMAQ
 **Region specific constraints**
 
 In order to successfully run this workshop, you should select a region where Amazon EC2 hpc7g instances are available.
+Additionally, the snapshot that contains the software installation is open to the public, and is available in the us-east-1 region.
